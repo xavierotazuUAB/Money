@@ -13,4 +13,15 @@ public class Money
 		   iAmount = amount;
 		   sCurrency = currency;
 	   }
+
+	   public boolean equals(Object anObject)
+	   {
+	      if (anObject instanceof Money)
+	      {
+		      Money aMoney = (Money)anObject;
+		      return (aMoney.currency().equals(aMoney.currency())) &&
+	                  (aMoney.amount() == aMoney.amount());
+	      }
+	      return false;
+	   }
 }
