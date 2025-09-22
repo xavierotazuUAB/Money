@@ -4,10 +4,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class MoneyTest {
+class MoneyTest
+{
 
 	@Test
-	void testSimpleAdd() {
+	void testSimpleAdd()
+	{
 		// [12 CHF] + [14 CHF] == [26 CHF]
 		Money f12CHF   = new Money(12,”CHF”);
 		Money f14CHF   = new Money(14,”CHF”);
