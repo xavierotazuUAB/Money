@@ -49,6 +49,8 @@ class MoneyTest
 		assertFalse(f12CHF.equals(f14CHF));		// Crida explícita a equals()
 		assertTrue(!f12CHF.equals(null));		// Comparació amb un objecte buit
 		assertEquals(f12CHF, f12CHF);			// Comparació amb si mateix
+		
+		assertNotEquals(f12CHF, "hola");		// Comparació amb un objecte que no és del tipus Object
 	  }
 
 
