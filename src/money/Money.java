@@ -24,4 +24,9 @@ public class Money
 	      }
 	      return false;
 	   }
+
+	   public Money add(Money m)
+	   {
+		   return new Money(amount()+m.amount(),currency());
+	   }
 }
