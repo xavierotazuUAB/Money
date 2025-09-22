@@ -21,4 +21,13 @@ class MoneyTest
 
 	}
 
+	@Test
+	void testConstructor()
+	{
+		Money f12CHF   = new Money(12,”CHF”);
+
+		assertTrue(f12CHF.amount()==12);
+		assertEquals(f12CHF.currency(),”CHF”);
+
+	}
 }
