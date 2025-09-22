@@ -19,8 +19,8 @@ public class Money
 	      if (anObject instanceof Money)
 	      {
 		      Money aMoney = (Money)anObject;
-		      return (aMoney.currency().equals(aMoney.currency())) &&
-	                  (aMoney.amount() == aMoney.amount());
+		      return (aMoney.currency().equals(currency())) &&
+	                  (amount() == aMoney.amount());
 	      }
 	      return false;
 	   }
