@@ -8,4 +8,9 @@ public class Money
 	   public int amount() {return iAmount;}
 	   public String currency() {return sCurrency;}
 
+	   public Money(int amount, String currency)
+	   {
+		   iAmount = amount;
+		   sCurrency = currency;
+	   }
 }

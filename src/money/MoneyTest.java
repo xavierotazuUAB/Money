@@ -11,8 +11,8 @@ class MoneyTest
 	void testSimpleAdd()
 	{
 		// [12 CHF] + [14 CHF] == [26 CHF]
-		Money f12CHF   = new Money(12,”CHF”);
-		Money f14CHF   = new Money(14,”CHF”);
+		Money f12CHF   = new Money(12,"CHF");
+		Money f14CHF   = new Money(14,"CHF");
 		Money expected = new Money(26, "CHF");
 		Money result   = f12CHF.add(f14CHF);
 
@@ -24,10 +24,10 @@ class MoneyTest
 	@Test
 	void testConstructor()
 	{
-		Money f12CHF   = new Money(12,”CHF”);
+		Money f12CHF   = new Money(12,"CHF");
 
 		assertTrue(f12CHF.amount()==12);
-		assertEquals(f12CHF.currency(),”CHF”);
+		assertEquals(f12CHF.currency(),"CHF");
 
 	}
 }
